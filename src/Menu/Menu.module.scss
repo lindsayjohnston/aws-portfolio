@@ -16,8 +16,19 @@ $light-color: rgb(247, 232, 193);
 
        
 
-            a{
-                
+            .NotCurrentPage{
+                font-size: 20px;
+                font-weight: normal;
+                padding: 5px;
+            }
+
+            .NotCurrentPage:hover{
+                font-size: 23px;
+            }
+
+            .CurrentPage{
+                font-size: 25px; 
+                font-weight: bold; 
                 padding: 5px;
             }
     

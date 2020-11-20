@@ -25,17 +25,17 @@ class Menu extends Component {
 
                     {this.menuLabels.map(item => {
                         const itemUpperCase = item.toUpperCase();
-                        let labelStyle = { fontSize: "20px", fontWeight: "normal" };
+                        let labelStyle = `${styles.NotCurrentPage} ${styles[item]}`;
                         if (item === this.state.pageShown) {
-                            labelStyle = { fontSize: "25px", fontWeight: "bold" }
+                            labelStyle = `${styles.CurrentPage} ${styles[item]}`;
                         }
                         return (
                             
                                 <a href={`#${item}`}
                                     key={item}
-                                    className={styles[item]}
+                                    className={labelStyle}
                                     onClick={() => this.menuClickHandler(item)}
-                                    style={labelStyle}
+                                    
                                 >
                                     {itemUpperCase}</a>
                            

@@ -1,17 +1,46 @@
+$light-color:rgb(247, 232, 193);
+
 .ProjectCard{
     // width: 80%;
+    max-width: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    // border: 1px solid $light-color;
+    position: relative;
 
-    h2{
+    .ProjectHeading{
         cursor: pointer;
+        position: unset;
+        font-size: 27px;
+        margin: 10px;
+    }
+
+    .ProjectHeading:hover{
+        font-size: 30px;
+    }
+
+    .ImgOverlay{
+        position: relative;
     }
 
    
-        img{
-            width: 300px;    
+        .Thumbnail{
+            width: 300px;  
+            // border: 1px solid $light-color;   
+            border-radius: 20px;
+        }
+
+        .Thumbnail:hover{
+            width: 305px;
+        }
+
+        .Pointer{
+            width: 20px;
+            position: absolute;
+            bottom: -10px;
+            right: 20px;
         }
     
 
@@ -28,7 +57,21 @@
 
     p{
         text-align: center;
+        margin: 10px;
+    }
+
+    .XOutButton{
+        position: absolute;
+        width: 20px;
+        top: 8px;
+        right: 12px;
+        cursor: pointer;
     }
 
     
+}
+
+.Border{
+    border: 1px solid $light-color;
+    border-radius: 20px;
 }
