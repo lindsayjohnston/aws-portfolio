@@ -1,16 +1,48 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styles from './Menu.module.scss';
 
-const menu = (props) => (
-    <div className={styles.Menu}>
-        <div className={styles.MenuItems}>
-            <a href="#Top" className={styles.Top}>TOP</a>
-            <a href="#About" className={styles.About}>ABOUT</a>
-            <a href="#Projects"className={styles.Projects}>PROJECTS</a>
-            <a href="#Contact"className={styles.Contact}>CONTACT</a>
-        </div>
+class Menu extends Component {
+    //RUN SOME CODE HERE TO UNDERLINE OR BOLD WHICH PAGE WE'RE ON
+    menuLabels = [
+        "Top", "About", "Projects", "Contact"
+    ]
 
-    </div>
-);
+    state = {
+        pageShown: "Top"
+    }
 
-export default menu;
+
+    menuClickHandler = (label) => {
+        this.setState({ pageShown: label })
+    }
+
+    render() {
+
+        return (
+
+            <div className={styles.Menu} id="menu">
+                <div className={styles.MenuItems}>
+
+                    {this.menuLabels.map(item =>  {
+                        const itemUpperCase= item.toUpperCase();
+                        let labelStyle= {textDecoration: "unset"};
+                        if(item === this.state.pageShown){
+                            labelStyle= {textDecoration: "underline overline"}
+                        }
+                        return(
+                        <a href={`#${item}`}
+                            key= {item}
+                            className={styles[item]}
+                            onClick={() => this.menuClickHandler(item)} 
+                            style={labelStyle}
+                            >
+                            {itemUpperCase}</a>
+                    )})}
+
+                </div>
+
+            </div>);
+    }
+};
+
+export default Menu;

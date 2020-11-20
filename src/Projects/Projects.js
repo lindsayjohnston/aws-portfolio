@@ -46,6 +46,7 @@ class Projects extends Component {
                     {projectInfo.map((item, i) => {
 
                         return (<ProjectCard
+                            key={item[0]}
                             title={item[0]}
                             image={item[1]}
                             caption={item[2]}
