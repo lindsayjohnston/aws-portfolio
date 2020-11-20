@@ -14,34 +14,40 @@ $light-color: rgb(247, 232, 193);
         height: 100%;
         position: relative;
 
-        a{
-            font-size: 20px;
-            padding: 5px;
-        }
+       
 
-        .Top{
-            position: absolute;
-            top: 0px;
-            left: 0px;
-        }
+            a{
+                
+                padding: 5px;
+            }
+    
+            .Top{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+            }
+    
+            .About{
+                position: absolute;
+                top: 0px;
+                right: 0px;
+            }
+    
+            .Projects{
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+            }
+    
+            .Contact{
+                position: absolute;
+                bottom: 0px;
+                right: 0px;
+            }
 
-        .About{
-            position: absolute;
-            top: 0px;
-            right: 0px;
-        }
+        
 
-        .Projects{
-            position: absolute;
-            bottom: 0px;
-            left: 0px;
-        }
-
-        .Contact{
-            position: absolute;
-            bottom: 0px;
-            right: 0px;
-        }
+       
  
     }
 }

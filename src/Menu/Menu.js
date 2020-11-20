@@ -23,21 +23,24 @@ class Menu extends Component {
             <div className={styles.Menu} id="menu">
                 <div className={styles.MenuItems}>
 
-                    {this.menuLabels.map(item =>  {
-                        const itemUpperCase= item.toUpperCase();
-                        let labelStyle= {textDecoration: "unset"};
-                        if(item === this.state.pageShown){
-                            labelStyle= {textDecoration: "underline overline"}
+                    {this.menuLabels.map(item => {
+                        const itemUpperCase = item.toUpperCase();
+                        let labelStyle = { fontSize: "20px", fontWeight: "normal" };
+                        if (item === this.state.pageShown) {
+                            labelStyle = { fontSize: "25px", fontWeight: "bold" }
                         }
-                        return(
-                        <a href={`#${item}`}
-                            key= {item}
-                            className={styles[item]}
-                            onClick={() => this.menuClickHandler(item)} 
-                            style={labelStyle}
-                            >
-                            {itemUpperCase}</a>
-                    )})}
+                        return (
+                            
+                                <a href={`#${item}`}
+                                    key={item}
+                                    className={styles[item]}
+                                    onClick={() => this.menuClickHandler(item)}
+                                    style={labelStyle}
+                                >
+                                    {itemUpperCase}</a>
+                           
+                        )
+                    })}
 
                 </div>
 

@@ -9,7 +9,7 @@
     
     
 
-    h1{
+    .Name1{
         position: absolute;
         top: 75px;
         z-index: 22;
@@ -25,11 +25,15 @@
         max-width: 800px;
     }
 
-    a{
-        font-family: 'Bungee Shade';
-        font-size: 30px;
-        position: relative;
-        z-index: 21;
+   .ResumeLink{
+       font-size: 25px;
+        a{
+            font-family: 'Bungee Shade';
+            position: relative;
+            z-index: 21;
+
+        }
+        
     }
 }
 
