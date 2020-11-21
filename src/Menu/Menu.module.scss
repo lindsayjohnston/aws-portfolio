@@ -1,22 +1,24 @@
 $light-color: rgb(247, 232, 193);
 
 .Menu {
-    border: 1px solid $light-color;
     position: fixed;
     z-index: 20;
     top: 20px;
     right: 20px;
     bottom: 20px;
     left: 20px;
+    // min-width: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 
     .MenuItems{
         width: 100%;
         height: 100%;
         position: relative;
+        border: 1px solid $light-color;
         
-       
-
             .NotCurrentPage{
                 font-size: 20px;
                 font-weight: normal;
@@ -49,29 +51,27 @@ $light-color: rgb(247, 232, 193);
                 position: absolute;
                 bottom: 0px;
                 left: 0px;
+                // margin-bottom: 5px;
             }
     
             .Contact{
                 position: absolute;
                 bottom: 0px;
                 right: 0px;
+                // margin-bottom: 5px;
             }
 
-        
-
-       
- 
     }
 }
 
 
-@media (max-height: 480px){
+@media (max-height: 500px){
     .Menu{
         display: none;
     }
 }
 
-@media(max-width: 500px){
+@media(max-width: 279px){
     .Menu{
         display: none;
     }

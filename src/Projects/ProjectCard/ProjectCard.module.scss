@@ -15,6 +15,8 @@ $light-color:rgb(247, 232, 193);
         position: unset;
         font-size: 27px;
         margin: 10px;
+        width: 95%;
+        text-align: center;
     }
 
     .ProjectHeading:hover{
@@ -28,6 +30,7 @@ $light-color:rgb(247, 232, 193);
         .Thumbnail{
             width: 300px;   
             border-radius: 20px;
+            cursor: pointer;
         }
 
         .Thumbnail:hover{
@@ -74,28 +77,72 @@ $light-color:rgb(247, 232, 193);
     border-radius: 20px;
 }
 
+
 @media (max-width: 600px ){
     .ProjectCard{
+        width: 90%;
+        height: fit-content;
+        
+        .XOutButton{
+            width: 10px;
+            right: 5px;
+        }
+
         .ProjectHeading{
             font-size: 20px;
         }
-
-
         .ProjectHeading:hover{
             font-size: 21px;
+        }
+
+        .ImgOverlay{
+            width: 90%;
+        }
+
+        .Thumbnail{
+            width: 100%;   
+            border-radius: 20px;
+        }
+
+        .Thumbnail:hover{
+            width: 100%;
+         
+        }
+
+        .Pointer{
+            width: 20px;
+            position: absolute;
+            bottom: -10px;
+            right: 20px;
+        }
+    
+
+    }
+}
+
+@media (max-width: 350px ){
+    .ProjectCard{
+        // top: 50px;
+        .ProjectHeading{
+            font-size: 15px;
+        }
+        .ProjectHeading:hover{
+            font-size: 16px;
+        }
+
+        .Shown{
+
+            p{
+                font-size: 14px;
+               
+            }
+
         }
     }
 }
 
-@media (max-height: 600px){
+@media (max-height: 500px){
     .ProjectCard{
-        // .ProjectHeading{
-        //     font-size: 20px;
-        // }
-
-        // .ProjectHeading:hover{
-        //     font-size: 21px;
-        // }
 
         .ImgOverlay{
             width: 50%;

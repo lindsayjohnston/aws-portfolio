@@ -40,7 +40,7 @@ class Projects extends Component {
 
         return (
             <div id="Projects" className={styles.Projects}>
-                 <h1>PROJECTS</h1>
+                 <h1 className={styles.ProjectsTitle}>PROJECTS</h1>
                 <div className={projectCardsClass}>
                     
                     {projectInfo.map((item, i) => {

@@ -7,9 +7,9 @@
     align-items: center;
     position: relative;
     min-height: 600px;
-    min-width: 500px;
+    min-width: 280px;
 
-    h1{
+    .ProjectsTitle{
         position: absolute;
         top: 75px;
         // margin-left: 10px;
@@ -23,15 +23,15 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-right: 10px;
+        // margin-right: 10px;
 
     }
 
     .ProjectCardsToTop{
         position: absolute;
-        margin-right: 10px;
+        // margin-right: 10px;
         z-index: 21;
-        top: 150px;
+        top: 155px;
         width: 80%;
         height: 45%;
         display: flex;
