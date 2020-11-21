@@ -40,8 +40,7 @@ const projectCard = (props) => {
             <div className={hiddenDivClass}>
                 <div className={styles.ImgOverlay}>
                     <a href={props.link} target="blank"><img src={props.image} className={styles.Thumbnail}></img></a>
-
-                    <img className={styles.Pointer} src={pointer}></img>
+                    <img src={pointer} alt="pointer" className={styles.Pointer}></img>
                 </div>
 
                 <p> {props.caption}</p>

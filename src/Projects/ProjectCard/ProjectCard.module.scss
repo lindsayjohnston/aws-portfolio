@@ -1,14 +1,14 @@
 $light-color:rgb(247, 232, 193);
 
 .ProjectCard{
-    // width: 80%;
     max-width: 800px;
+    // height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // border: 1px solid $light-color;
     position: relative;
+   
 
     .ProjectHeading{
         cursor: pointer;
@@ -25,10 +25,8 @@ $light-color:rgb(247, 232, 193);
         position: relative;
     }
 
-   
         .Thumbnail{
-            width: 300px;  
-            // border: 1px solid $light-color;   
+            width: 300px;   
             border-radius: 20px;
         }
 
@@ -74,4 +72,43 @@ $light-color:rgb(247, 232, 193);
 .Border{
     border: 1px solid $light-color;
     border-radius: 20px;
+}
+
+@media (max-width: 600px ){
+    .ProjectCard{
+        .ProjectHeading{
+            font-size: 20px;
+        }
+
+
+        .ProjectHeading:hover{
+            font-size: 21px;
+        }
+    }
+}
+
+@media (max-height: 600px){
+    .ProjectCard{
+        // .ProjectHeading{
+        //     font-size: 20px;
+        // }
+
+        // .ProjectHeading:hover{
+        //     font-size: 21px;
+        // }
+
+        .ImgOverlay{
+            width: 50%;
+        }
+    
+            .Thumbnail{
+                width: 100%;    
+                border-radius: 20px;
+            }
+    
+            .Thumbnail:hover{
+                width: 100%;
+            }
+    
+    }
 }
