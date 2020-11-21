@@ -6,9 +6,9 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    min-height: 480px;
     
     
-
     .Name1{
         position: absolute;
         top: 75px;
@@ -16,7 +16,9 @@
     }
 
     img{
-        height: 200px;
+        height: 25%;
+        border-radius: 20px;
+        
     }
 
     p{
@@ -26,7 +28,7 @@
     }
 
    .ResumeLink{
-       font-size: 25px;
+       font-size: 27px;
         a{
             font-family: 'Bungee Shade';
             position: relative;
@@ -35,19 +37,31 @@
         }
         
     }
+
+    .ResumeLink:hover{
+        font-size: 28px;
+    }
 }
 
 @media (max-width: 500px){
     .AboutContent{
-        img{
-            // height: 100px;
-            position: absolute;
-            top: 100px;
-        }
 
         p{
             position: relative;
             z-index: 22;
         }
+    }
+}
+
+@media (max-height: 480px){
+    .AboutContent{
+        img{
+            display: none;
+        }
+
+        p{
+            top: 15px;
+        }
+        
     }
 }

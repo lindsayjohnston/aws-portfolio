@@ -6,9 +6,10 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    // margin-top: 60px;
+    min-height: 480px;
+   
 
-    h1{
+    .ConnectHeading{
         position: absolute;
         top: 75px;
     }
@@ -16,11 +17,20 @@
     .Links{
         display: flex;
         flex-direction: column;
+        align-items: center;
+
+        .ConnectLink{
+            font-size: 27px;
+            margin: 10px;
+        }
+
+        .ConnectLink:hover{
+            font-size: 28px;
+        }
 
         a{
             
             font-family: 'Bungee Shade';
-            font-size: 30px;
             position: relative;
             z-index: 21;
         }

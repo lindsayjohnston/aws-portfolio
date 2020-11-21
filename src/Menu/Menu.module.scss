@@ -8,12 +8,13 @@ $light-color: rgb(247, 232, 193);
     right: 20px;
     bottom: 20px;
     left: 20px;
+    
 
     .MenuItems{
         width: 100%;
         height: 100%;
         position: relative;
-
+        
        
 
             .NotCurrentPage{
@@ -60,5 +61,12 @@ $light-color: rgb(247, 232, 193);
 
        
  
+    }
+}
+
+
+@media (max-height: 480px){
+    .Menu{
+        display: none;
     }
 }
