@@ -8,7 +8,7 @@ import Contact from './Contact/Contact';
 
 function App() {
   return (
-    <div className={styles.App}>
+    <div >
       <Menu />
       <Home />
       <Projects />
