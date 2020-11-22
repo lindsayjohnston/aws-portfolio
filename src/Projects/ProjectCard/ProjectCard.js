@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './ProjectCard.module.scss';
-import xOutButton from "/Users/lindsayjohnston/Desktop/Programming/aws-portfolio/src/assets/times-solid.svg";
-import pointer from "/Users/lindsayjohnston/Desktop/Programming/aws-portfolio/src/assets/mouse-pointer-solid.svg";
+import xOutButton from "./times-solid.svg";
+import pointer from "./mouse-pointer-solid.svg";
 
 
 let hiddenDivClass;
@@ -39,15 +39,15 @@ const projectCard = (props) => {
             <h1 className={hiddenHeadingClass} onClick={props.click}>{props.title}</h1>
             <div className={hiddenDivClass}>
                 <div className={styles.ImgOverlay}>
-                    <a href={props.link} target="blank"><img src={props.image} className={styles.Thumbnail}></img></a>
-                    <img src={pointer} alt="pointer" className={styles.Pointer}></img>
+                    <a href={props.link} target="blank"><img src={props.image} className={styles.Thumbnail} alt={props.title}></img></a>
+                    <img src={pointer} alt="pointer" className={styles.Pointer} ></img>
                 </div>
 
                 <p> {props.caption}</p>
                 
             </div>
 
-            <img className={xOutButtonStyle} src={xOutButton} onClick={props.click}></img>
+            <img className={xOutButtonStyle} src={xOutButton} onClick={props.click} alt="x"></img>
 
         </div>
 
