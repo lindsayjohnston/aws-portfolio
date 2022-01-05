@@ -9,7 +9,7 @@ const projectInfo = [
     
     ["4 APIs-1 Button", gitHubMapImage, "By querying four different APIs--from Google, GitHub and Geomaps--I used vanilla JavaScript to display an interactive map of cities with their corresponding numbers of GitHub users. This project features asynchronous functions, Node.js and Heroku’s config variables feature to protect my API keys.", "https://github-map-real.herokuapp.com/"],
     ["Points Calculator", starPointsImage, "I used React to create a customer loyalty points calculator that displays beautifully on desktop and mobile. The user can upload their own dataset of purchases and calculate the amount of points accrued (think administrative applications). I also included a dummy data set to simulate immutable data stored on a server (think customer-facing applications).", "https://master.d2sxml8azj8dyl.amplifyapp.com/"],
-    ["Order Online", chipotleImage, "Mimicking the style and functionality of the Chipotle website, I used React to create dynamically-populated content cards to showcase each item on the menu. Users can choose ingredients for each item, add or remove items from their cart, and place an order online.", "https://www.bocaloud.com/"]
+    ["Order Online", chipotleImage, "Mimicking the style and functionality of the Chipotle website, I used React to create dynamically-populated content cards to showcase each item on the menu. Users can choose ingredients for each item, add or remove items from their cart, and place an order online.", "https://main.d25r1kk5mc9ae9.amplifyapp.com/  "]
 ];
 
 let projectCardsClass= styles.ProjectCards;
